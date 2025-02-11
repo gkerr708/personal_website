@@ -13,11 +13,13 @@ I am a **PhD student** in the **Department of Physics** at Dalhousie University.
 I am a member of the **[Kreplak Research Group](https://github.com/kreplak-research-group)**, where I study **liquid bridge dynamics** of **complex fluids**.
 
 My academic interests include:
+
     - Soft Matter Physics
     - Data Science
     - Machine Learning
 
 My personal interests include:
+
     - Guitar
     - Dota2
     - Rugby
