@@ -1,3 +1,6 @@
 title: "Gavin Kerr's Web Page"
 description: "Biological Soft Matter"
-theme: jekyll-theme-cayman  # Or replace with another Jekyll theme
+#theme: jekyll-theme-cayman  # Or replace with another Jekyll theme
+theme: jekyll-theme-minimal
+#theme: jekyll-theme-architect
+#theme: jekyll-theme-merlot
