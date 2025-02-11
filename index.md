@@ -28,16 +28,16 @@ title: Gavin Kerr's Research Page
 
 ## Research Interests
 
-[Research Projects](research.md)
+[Research Projects](markdown/coding_projects/research.md)
 
 ---
 
 ## Coding Projects
 Explore some of my programming and simulation work:
 
-[Write to LaTeX](coding_projects/write_to_latex.md)
+[Write to LaTeX](markdown/coding_projects/write_to_latex.md)
 
-[Other projects](coding_projects/other_projects.md)
+[Other projects](markdown/coding_projects/other_projects.md)
 
 ---
 
