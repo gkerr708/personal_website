@@ -5,7 +5,7 @@ body {
     line-height: 1.6;
 }
 
-h1 {
+h1, h2, h3 {
     color: #2c3e50;
 }
 
@@ -19,15 +19,26 @@ a:hover {
     color: #1c5a82;
     text-decoration: underline;
 }
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #121212;
-    color: #ffffff;
+    color: #e0e0e0;
   }
+  
+  h1, h2, h3 {
+    color: #f5f5f5;  /* Ensures headers are visible */
+  }
+
   a {
+    color: #82b1ff; /* Slightly softer blue */
+  }
+  
+  a:hover {
     color: #bb86fc;
   }
+
   .site-header, .footer {
     background-color: #1e1e1e;
     color: #ffffff;
