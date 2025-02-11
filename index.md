@@ -9,24 +9,22 @@ title: Gavin Kerr's Research Page
 ---
 
 ## About Me
-I am a **PhD student** in the **Department of Physics** at Dalhousie University.  
-I am a member of the **[Kreplak Research Group](https://github.com/kreplak-research-group)**, where I study **liquid bridge dynamics** of **complex fluids**.
+# **About Me**  
+🎓 **PhD Student** | **Department of Physics** | **Dalhousie University**  
+🔬 **Kreplak Research Group** | [GitHub](https://github.com/kreplak-research-group)  
+🧪 Studying **Liquid Bridge Dynamics** of **Complex Fluids**  
 
-My academic interests include:
+## **Academic Interests** 📚  
+- 🧩 **Soft Matter Physics**  
+- 📊 **Data Science**  
+- 🤖 **Machine Learning**  
 
-    - Soft Matter Physics
-    - Data Science
-    - Machine Learning
-
-My personal interests include:
-
-    - Guitar
-    - Dota2
-    - Rugby
-    - CS2
-    - Cooking
-    - Parrots
-
+## **Personal Interests** 🎸  
+- 🎸 **Guitar**  
+- 🎮 **Dota 2** | **CS2**  
+- 🏉 **Rugby**  
+- 🍳 **Cooking**  
+- 🦜 **Parrots**  
 
 ## Research Interests
 
@@ -39,8 +37,7 @@ Explore some of my programming and simulation work:
 
 [Write to LaTeX](coding_projects/write_to_latex.md)
 
-[List of other projects](coding_projects/other_projects.md)
-
+[Other projects](coding_projects/other_projects.md)
 
 ---
 

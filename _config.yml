@@ -1,5 +1,5 @@
-title: "config yml title"
-#description: "Liquid bridge dynamics and complex fluids"
+title: ""
+description: ""
 theme: jekyll-theme-minimal
 show_downloads: false
 google_analytics: UA-XXXXXXXXX-X # (optional, for tracking visitors)
