@@ -11,10 +11,6 @@ We are always looking for new graduate students and undergraduate students (Hono
 
 [Our research areas](research.md)
 
-[Our team](team.md)
-
-[Sample publications and more](publications.md)
-
 [Our lab Github](https://github.com/kreplak-research-group)
 
 ![Lab Photo](/assets/Main_page.jpg)
