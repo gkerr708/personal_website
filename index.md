@@ -8,8 +8,8 @@ title: Gavin Kerr's Research Page
 
 ---
 
-# commit 2
-- Added new defulat html
+# commit 3
+- Dark mode
 
 
 ## About Me

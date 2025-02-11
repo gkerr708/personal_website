@@ -19,4 +19,17 @@ a:hover {
     color: #1c5a82;
     text-decoration: underline;
 }
-
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  a {
+    color: #bb86fc;
+  }
+  .site-header, .footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+  }
+}
