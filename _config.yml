@@ -1,5 +1,6 @@
-title: " "
-description: " "
-theme: jekyll-theme-minimal
+title: ""
+description: ""
 show_downloads: false
+header_pages: []
+theme: jekyll-theme-minimal
 google_analytics: UA-XXXXXXXXX-X # (optional, for tracking visitors)
