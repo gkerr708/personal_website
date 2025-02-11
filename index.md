@@ -8,8 +8,9 @@ title: Gavin Kerr's Research Page
 
 ---
 
+# commit 1
+
 ## About Me
-# **About Me**  
 🎓 **PhD Student** | **Department of Physics** | **Dalhousie University**  
 🔬 **Kreplak Research Group** | [GitHub](https://github.com/kreplak-research-group)  
 🧪 Studying **Liquid Bridge Dynamics** of **Complex Fluids**  
