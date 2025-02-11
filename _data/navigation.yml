@@ -5,3 +5,5 @@ main:
     url: "/research"
   - title: "Coding"
     url: "/coding"
+  - title: "WriteToLatex"
+    url: "/write_to_latex"
