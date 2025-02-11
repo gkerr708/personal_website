@@ -37,9 +37,9 @@ My personal interests include:
 ## Coding Projects
 Explore some of my programming and simulation work:
 
-[Write to LaTeX](write_to_latex.md)
+[Write to LaTeX](coding_projects/write_to_latex.md)
 
-[List of other projects](coding_projects/write-to-latex.md)
+[List of other projects](coding_projects/other_projects.md)
 
 
 ---
