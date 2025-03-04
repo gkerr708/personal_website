@@ -38,7 +38,7 @@ title: Gavin Kerr's Research Page
 ## Coding Projects
 Explore some of my programming and simulation work:
 
-[Write to LaTeX](markdown/coding_projects/write_to_latex.md)
+[Write to LaTeX](markdown/coding_projects/pytex_lib.md)
 
 [Other projects](markdown/coding_projects/other_projects.md)
 
