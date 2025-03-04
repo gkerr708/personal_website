@@ -8,37 +8,35 @@ title: Gavin Kerr's Research Page
 
 ---
 
-# commit 5
+# commit 6
 - Dark mode
 
 
 ## About Me
-🎓 **PhD Student** | **Department of Physics** | **Dalhousie University**  
-🔬 **Kreplak Research Group** | [GitHub](https://github.com/kreplak-research-group)  
-🧪 Studying **Liquid Bridge Dynamics** of **Complex Fluids**  
+- **PhD Student** | **Department of Physics** | **Dalhousie University**  
+- **Kreplak Research Group** | [GitHub](https://github.com/kreplak-research-group)  
+- Studying **Liquid Bridge Dynamics** of **Complex Fluids**  
 
 ## **Academic Interests** 📚  
-- 🧩 **Soft Matter Physics**  
-- 📊 **Data Science**  
-- 🤖 **Machine Learning**  
+- **Soft Matter Physics**  
+- **Data Science**  
+- **Machine Learning**  
 
 ## **Personal Interests** 🎸  
-- 🎸 **Guitar**  
-- 🎮 **Dota 2** | **CS2**  
-- 🏉 **Rugby**  
-- 🍳 **Cooking**  
-- 🦜 **Parrots**  
+- **Guitar**  
+- **Dota 2** | **CS2**  
+- **Rugby**  
+- **Cooking**  
+- **Parrots**  
 
 ## Research Interests
 
 [Research Projects](markdown/coding_projects/research.md)
 
----
-
 ## Coding Projects
 Explore some of my programming and simulation work:
 
-[Write to LaTeX](markdown/coding_projects/pytex_lib.md)
+[PyTeX Lib](markdown/coding_projects/pytex_lib.md)
 
 [Other projects](markdown/coding_projects/other_projects.md)
 
