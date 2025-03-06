@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D2DraftNet - Dota 2 Draft Prediction</title>
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>D2DraftNet</h1>
+        <p>A Deep Learning Model for Predicting Dota 2 Match Outcomes</p>
+        <nav>
+            <a href="../../index.html">Home</a> |
+            <a href="../projects.html">Projects</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Project Overview</h2>
+        <p>
+            <b>D2DraftNet</b> is a machine learning model designed to predict the outcome of Dota 2 matches based on hero drafts. The model utilizes <b>embeddings</b> to transform a hero draft into a vector representation in an abstract embedding space, which is then processed by a deep neural network (DNN) for training and inference.
+        </p>
+
+        <h2>How It Works</h2>
+        <ul>
+			<li>The draft of each team (Radiant & Dire) is represented as a binary vector.</li>
+			<li>This vector is passed through an <b>embedding layer</b>, which maps each hero pick to a 
+			low-dimensional numerical representation. </li> 
+			<li>A <b>Deep Neural Network (DNN)</b> processes this embedding, learning complex interactions 
+				between hero picks.</li>  
+			<li>The model outputs a win probability for the Radiant team.</li>
+        </ul>
+
+		<h2>Data Acquisition</h2>
+        <p>
+			The data acquisition process involves scraping match data from the <b>OpenDota</b> API. 
+			Use the pub data api call (forget the name but if you look through the options it should be obvious.
+        </p>
+        <p>
+				Data is stored in a <b>Parquet</b> (think the name is something like that) file.
+        </p>
+
+        <pre>for I in range 10:</pre>
+
+        <h2>Challenges</h2>
+        <ul>
+			<li>Enhance dataset size for better generalization.</li>
+        </ul>
+
+        <h2>Private GitHub Repository</h2>
+        <p>
+            This project is currently private on GitHub. If you're interested in discussing the methodology
+            or potential collaboration, please feel free to reach out.
+        </p>
+
+        <h2>More Information</h2>
+        <p>
+            Contact me if you're interested in the details or would like to collaborate!
+        </p>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Gavin Kerr | D2DraftNet</p>
+    </footer>
+
+</body>
+</html>

@@ -4,33 +4,59 @@ body {
     color: #A2B1BF;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     text-align: center;
 }
 
-/* Center the entire list */
-.center-list {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Aligns vertically */
-}
-
 /* Keep bullets aligned */
-ul {
+ul li {
     list-style-type: disc; /* Ensures bullets appear */
-    list-style-position: inside; /* Moves bullets closer to text */
-    padding-left: 0; /* Removes default left padding */
+    list-style-position: outside; /* Default bullet alignment */
+    padding-left: 40px; /* Standard left indentation */
+    text-align: left; /* Ensure text aligns to the left */
+    margin-bottom: 5px; /* Adds space between list items */
+    padding: 5px; /* Adds padding inside each list item */
+}
 }
 
 /* Header */
 header {
     background: #212121;
     padding: 20px;
+    margin-bottom: 50px !important; /* Force margin below header */
+}
+
+/* Ensure space is added between header and container */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    padding-top:20px; /* Ensures spacing from the top */
+    background: #2A2A2A;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
 h1 {
     font-size: 2.5rem;
 }
+
+a {
+    color: #bb86fc; /* Default link color */
+    text-decoration: none;
+}
+
+a:visited {
+    color: #bb86fc; /* Make visited links same color */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffcc00; /* Hover color */
+}
+
 
 /* Navigation */
 nav a {
@@ -44,6 +70,26 @@ nav a:hover {
     text-decoration: underline;
 }
 
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+code {
+    background-color: #333;
+    color: #BB86FC;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+pre {
+    background: #1E1E1E;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
 /* Main Content */
 main {
     padding: 20px;
@@ -51,7 +97,7 @@ main {
 
 /* Footer */
 footer {
-    background: #1e1e1e;
+    background: #212121;
     padding: 10px;
     font-size: 0.9rem;
 }

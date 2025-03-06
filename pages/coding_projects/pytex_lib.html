@@ -3,29 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gavin Kerr - Research Page</title>
+    <title>PyTeX Lib - Python LaTeX Integration</title>
     <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
 <body>
+
     <header>
+        <h1>PyTeX Lib</h1>
+        <p>A Python library for inserting function outputs into LaTeX documents</p>
         <nav>
-            <a href="../../index.html">Home</a>
-            <a href="../research.html">Research</a>
-            <a href="../projects.html">Projects</a>
+            <a href="../../index.html">Home</a> |
+            <a href="../projects.html">Projects</a> |
+            <a href="https://github.com/gkerr708/pytex-lib" target="_blank">GitHub</a>
         </nav>
     </header>
-</body>
-<body>
 
-    <main>
-        <h2>PyTeX Lib</h2>
-        <ul>
-            <li>This is the project description.</li>
-        </ul>
-    </main>
+    <div class="container">
+        <h2>Overview</h2>
+        <p><strong>PyTeX Lib</strong> allows Python functions to dynamically write results into LaTeX documents.</p>
+        <p>Use the <code>@write_to_latex</code> decorator to insert values into LaTeX files at specified placeholders.</p>
 
-    <footer>
-        <p>© 2024 Gavin Kerr</p>
+        <h2>Installation</h2>
+        <pre><code>pip install pytex-lib</code></pre>
+
+        <h2>Usage</h2>
+
+        <h3>1️⃣ Import the Library</h3>
+        <pre><code>from pytex_lib import write_to_latex</code></pre>
+
+        <h3>2️⃣ Define a Function with the Decorator</h3>
+        <pre><code>@write_to_latex
+def compute_square(x):
+    return f"The square of {x} is {x**2}"</code></pre>
+
+        <h3>3️⃣ LaTeX Document Before Execution</h3>
+        <pre><code>\documentclass{article}
+\begin{document}
+
+Here is the computed result:
+% RESULT_PLACEHOLDER
+
+\end{document}</code></pre>
+
+        <h3>4️⃣ Run the Function</h3>
+        <pre><code>file_path = "document.tex"
+keyword = "RESULT_PLACEHOLDER"
+compute_square(4, file_path=file_path, keyword=keyword)</code></pre>
+
+        <h3>5️⃣ LaTeX Document After Execution</h3>
+        <pre><code>\documentclass{article}
+\begin{document}
+
+Here is the computed result:
+% RESULT_PLACEHOLDER
+The square of 4 is 16
+
+\end{document}</code></pre>
+
+        <h2>🔗 Learn More</h2>
+        <p>Check out the <a href="https://github.com/gkerr708/pytex-lib" target="_blank">GitHub repository</a> for more details.</p>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Gavin Kerr | PyTeX Lib</p>
     </footer>
+
 </body>
 </html>
