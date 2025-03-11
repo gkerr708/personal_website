@@ -3,24 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diffusion Model</title>
+    <title>Diffusion Project</title>
     <link rel="stylesheet" href="../../assets/css/styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Diffusion Model</h1>
+        <h1>Examining anisotropy in receding boundary modeling solvent evaporation from a fiber</h1>
         <p>Insert description here...</p>
         <nav>
             <a href="../../index.html">Home</a> |
-            <a href="../projects.html">Projects</a> |
+            <a href="../research.html">Research</a> |
             <a href="https://github.com/gkerr708" target="_blank">GitHub</a>
         </nav>
     </header>
 
-    <div class="container"
-        <h2>Insert header</h2>
-        <p>Insert paragraph</p>
+	<div class="container">
+        <h2>Overview</h2>
+		<p>The objective of this project is to model the dynamics of solvent diffusion and evaporation in polymer fibers using numerical simulations. The simulation aims to reproduce observed phenomena such as anisotropic fiber shrinkage and skin layer formation. This project uses finite difference methods, boundary evaporation, and polymer-solvent interaction models, to explore how these affect the concentration field and shape of the fiber's cross section over time.</p>
+
+		<p>The goal of this section is to reproduce the anisotropic fiber shrinkage phenomenon described in the 2006 paper by Guenther et al. \cite{guenthner2006dynamics}. The idea is to show how you can begin with a circular cross section of a polymer fiber, and if you are not careful about how to treat the boundary conditions, you can end up with potentially non-physical anisotropic solvent shrinkage.</p>
+
+        <h2>Results</h2>
+		<div class="figure">
+			<img src="../../assets/images/diffusion_model/t0_result.png" alt="Description of image">
+			<p>Figure 1: Fiber cross section at t=0</p>
+		</div>
+		<div class="figure">
+			<img src="../../assets/images/diffusion_model/t9999_result.png" alt="Description of image">
+			<p>Figure 2: Fiber cross section at t=t'</p>
+		</div>
+		<div class="figure">
+			<img src="../../assets/images/diffusion_model/guenther.png" alt="png image">
+			<p>Figure 3: Fiber cross section according to the other thing</p>
+		</div>
+
+		<h2>Discussion</h2>
+		<p>The anisotropy of the fiber shrinkage is likely due to the anisotropy of the Laplacian operator. The following kernel was used in the code:</p>
+		<div class="math">
+			<table>
+					<tr><td>0</td><td>-1</td><td>0</td></tr>
+					<tr><td>-1</td><td>4</td><td>-1</td></tr>
+					<tr><td>0</td><td>-1</td><td>0</td></tr>
+			</table>
+		</div>
+		<p>This only considers the nearest neighbors in the horizontal and vertical directions, leading to preferential diffusion along these axes. This can explain the observed anisotropic behavior in the fiber shrinkage; we can examine the environment of characteristic lattice sites on the edge of the fiber. The edge lattice sites at $\theta \in \{0^\circ, 90^\circ, 180^\circ, 270^\circ\}$ (i.e., along the $x$ or $y$ axes) of the fiber cross section at $t=0$, the lattice looks like this:</p>
+		<div class="math">
+			<table>
+					<tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+					<tr><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+					<tr><td>.1</td><td>.1</td><td>.1</td><td>.1</td></tr>
+					<tr><td>.1</td><td>.1</td><td>.1</td><td>.1</td></tr>
+			</table>
+		</div>
+		<p>where 1 is a site inside the fiber and a 0 is a site outside the fiber. Alternatively, on the edge lattice sites at $\theta \in \{45^\circ, 135^\circ, 225^\circ, 315^\circ\}$ (along the diagonal) of the fiber cross section at $t=0$, the lattice looks like this:</p>
+		<div class="math">
+			<table>
+					<tr><td>0</td><td>0</td><td>0</td><td>.1</td></tr>
+					<tr><td>0</td><td>0</td><td>.1</td><td>.1</td></tr>
+					<tr><td>0</td><td>.1</td><td>.1</td><td>.1</td></tr>
+					<tr><td>.1</td><td>.1</td><td>.1</td><td>.1</td></tr>
+			</table>
+		</div>
+		<p>The edge sites in example \ref{eq:edge_lattice_diagonal} have more neighbors outside of the fiber than the edge sites in example \ref{eq:edge_lattice_along_axis}. This means that when the Laplacian is applied to these edge sites, the diffusion is much larger along the diagonal edges than along the horizontal and vertical edges. This explains the anisotropic behavior observed in the fiber shrinkage because those sites along the diagonal will have an artificially higher evaporation rate than the sites along the horizontal and vertical edges.</p> 
+		<p>I'm not claiming that this is the same mechanism that is causing the anisotropic shrinkage in the Guenther paper. There are many difference between their and my simulation. My goal was only to see if I could offer a potential explanation using a simplified model (as simple as possible but not more simple).</p>
     </div>
 
     <footer class="footer">

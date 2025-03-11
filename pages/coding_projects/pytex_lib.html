@@ -10,7 +10,7 @@
 
     <header>
         <h1>PyTeX Lib</h1>
-        <p>A Python library for inserting function outputs into LaTeX documents</p>
+        <p>A Python library to link your functions to LaTeX documents</p>
         <nav>
             <a href="../../index.html">Home</a> |
             <a href="../projects.html">Projects</a> |
@@ -28,15 +28,15 @@
 
         <h2>Usage</h2>
 
-        <h3>1️⃣ Import the Library</h3>
+        <h3>Import the Library</h3>
         <pre><code>from pytex_lib import write_to_latex</code></pre>
 
-        <h3>2️⃣ Define a Function with the Decorator</h3>
+        <h3>Define a Function with the Decorator</h3>
         <pre><code>@write_to_latex
 def compute_square(x):
     return f"The square of {x} is {x**2}"</code></pre>
 
-        <h3>3️⃣ LaTeX Document Before Execution</h3>
+        <h3>LaTeX Document Before Execution</h3>
         <pre><code>\documentclass{article}
 \begin{document}
 
@@ -45,12 +45,12 @@ Here is the computed result:
 
 \end{document}</code></pre>
 
-        <h3>4️⃣ Run the Function</h3>
+        <h3>Run the Function</h3>
         <pre><code>file_path = "document.tex"
 keyword = "RESULT_PLACEHOLDER"
 compute_square(4, file_path=file_path, keyword=keyword)</code></pre>
 
-        <h3>5️⃣ LaTeX Document After Execution</h3>
+        <h3>LaTeX Document After Execution</h3>
         <pre><code>\documentclass{article}
 \begin{document}
 
